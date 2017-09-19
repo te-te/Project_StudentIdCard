@@ -1,0 +1,84 @@
+html {
+  font-size: 20px;
+}
+
+.index {
+  text-align: center;
+}
+
+.teamName {
+  margin-top: 80px;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.thumb {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.thumb > button {
+  background-color: skyblue;
+}
+
+.thumb > button > img {
+  width: 80px;
+}
+
+.card {
+  text-align: center;
+}
+
+.top {
+  background-color: skyblue;
+}
+
+.card_main {
+  display: inline-block;
+}
+
+#profile_img {
+  width: 130px;
+}
+
+.back_btn {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.cardTitle {
+  display: inline-block;
+}
+
+.edit_btn {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.edit {
+  text-align: center;
+}
+
+.edit_main {
+  display: inline-block;
+}
+
+.confirm_btn {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#edit_img {
+  width: 130px;
+}
+
+#seal_img {
+  width: 40px;
+}
+
+.table{
+  width: 350px;
+  height: 470px;
+}

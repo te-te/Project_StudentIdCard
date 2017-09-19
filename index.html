@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>mobile student ID card</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="index">
+      <div class="teamName">
+        <h1>7조 つながり</h1>
+      </div>
+      <div class="main">
+        <div class="thumb">
+          <button class="profile_btn" id="jo_btn" value="1">
+            <img src="./img/1.jpg">
+          </button>
+          <label for="jo_btn">
+            <h3>조찬호</h3>
+          </label>
+        </div>
+        <div class="thumb">
+          <button class="profile_btn" id="kim_btn" value="2">
+            <img src="./img/2.jpg">
+          </button>
+          <label for="kim_btn">
+            <h3>김태인</h3>
+          </label>
+        </div>
+        <div class="thumb">
+          <button class="profile_btn" id="woo_btn" value="3">
+            <img src="./img/3.jpg">
+          </button>
+          <label for="woo_btn">
+            <h3>우영아</h3>
+          </label>
+        </div>
+        <div class="thumb">
+          <button class="profile_btn" id="yi_btn" value="4">
+            <img src="./img/4.jpg">
+          </button>
+          <label for="yi_btn">
+            <h3>이현필</h3>
+          </label>
+        </div>
+        <div class="thumb">
+          <button class="profile_btn" id="kwak_btn" value="5">
+            <img src="./img/5.jpg">
+          </button>
+          <label for="kwak_btn">
+            <h3>곽대효</h3>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="display:none">
+      <div class="top">
+        <div class="back_btn" id="card_back_btn">
+          <button>BACK</button>
+        </div>
+
+        <div class="cardTitle">
+          <h1>학생증</h1>
+        </div>
+
+        <div class="edit_btn">
+          <button id="edit_btn" value="">EDIT</button>
+        </div>
+      </div>
+
+      <div class="card_main">
+        <table class="table">
+          <tr>
+            <td rowspan="3" style="width: 120px;">
+              <div class="profileImg">
+                <img id="profile_img" src="">
+              </div>
+            </td>
+            <td style="vertical-align: bottom"><b>이름</b></td>
+            <td id="td_name" style="vertical-align: bottom"></td>
+          </tr>
+          <tr>
+            <td><b>학번</b></td>
+            <td id="td_student_no"></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top"><b>학과</b></td>
+            <td id="td_dept" style="vertical-align: top"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><b>위 학생은<br>영진전문대 학생임을 증명합니다</b></td>
+          </tr>
+          <tr>
+            <td id="td_date" colspan="3" style="vertical-align: bottom"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><b>영진전문대학 총장 최재영</b><img id="seal_img" src="./img/seal.png"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="edit" style="display:none">
+      <div class="top">
+      <div class="back_btn" id="edit_back_btn">
+        <button>BACK</button>
+      </div>
+      <div class="cardTitle">
+        <h1>학생증</h1>
+      </div>
+      <div class="confirm_btn">
+        <button id="confirm_btn">CONFIRM</button>
+      </div>
+      </div>
+      <div class="edit_main">
+        <table class="table">
+          <tr>
+            <td rowspan="3">
+              <div class="profileImg">
+                <img id="edit_img" src="">
+              </div>
+            </td>
+            <td style="vertical-align: bottom"><b>이름</b></td>
+            <td style="vertical-align: bottom"><input id="name" type="text" size="15"></td>
+          </tr>
+          <tr>
+            <td><b>학번</b></td>
+            <td><input id="student_no" type="text" size="15"></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top"><b>학과</b></td>
+            <td style="vertical-align: top"><input id="dept" type="text" size="15"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><b>위 학생은<br>영진전문대 학생임을 증명합니다</b></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <select id="year" name="year">
+                <option>선택</option>
+                <script>
+                    for(var i=1970; i<=2017;i++){
+                        document.write("<option>"+i+"</option>");
+                    }
+                </script>
+              </select>년
+              <select id="month" name="month">
+                <option>선택</option>
+                <script>
+                    for(var i=1; i<=12;i++){
+                        document.write("<option>"+i+"</option>");
+                    }
+                </script>
+              </select>월
+              <select id="day" name="day">
+                <option>선택</option>
+                <script>
+                    for(var i=1; i<=31;i++){
+                        document.write("<option>"+i+"</option>")
+                    }
+                </script>
+              </select>일
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"><b>영진전문대학 총장 최재영</b><img id="seal_img" src="./img/seal.png"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
